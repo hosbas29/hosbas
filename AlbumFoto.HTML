@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hosbasa</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+   	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   	<!--main.jss / javascrip/bac to top-->
+    <script src="https://kit.fontawesome.com/72d0d9b9ea.js" crossorigin="anonymous"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>   
+<!--MY CSS--> 
+    <link rel="stylesheet" href="css/style.css">
+
+	
+</head>
+<body>
+
+<!--loader-->
+<div class="bg-loader">
+	<div class="loader"></div>
+</div>
+
+
+
+<!--HEADER-->
+	<div class="medsos">
+		<div class="container">
+			<ul>
+				<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<header>
+		<div class="container">
+			<h1><a href="index.html">Hosbas</a></h1>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li class="active"><a href="Service.html">Album Foto</a></li>
+				<li><a href="Alamat.html">Alamat</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+<!--LABEL-->
+<section class="label">
+	<div class="container">
+		<p>Home / Service</p>
+	</div>
+</section>
+
+
+<!--SERVICE-->
+<section>
+<div class="container">	
+		<h3 class="light center grey-text text-darken-3"><b>Album</b></h3>
+		<div class="ALBUM">
+			<div class="carousel">
+			    <a class="carousel-item" href="#!"><img src="img/10.jpeg" class="responsive-img materialboxed"></a>
+			    <a class="carousel-item" href="#!"><img src="img/11.jpeg" class="responsive-img materialboxed"></a>
+			    <a class="carousel-item" href="#!"><img src="img/3.jpg" class="responsive-img materialboxed"></a>
+			    <a class="carousel-item" href="#!"><img src="img/5.jpg" class="responsive-img materialboxed"></a>
+			    <a class="carousel-item" href="#"><img src="img/7.jpg" class="responsive-img materialboxed"></a>
+			    
+			</div>
+		</div>	
+</div>
+</section>
+
+
+<!--Back to Top-->
+	<a href="#" class="to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+  	<script src="min.js"></script>
+
+
+<!--video-->
+<section>
+	<div class="container">
+		<p><b>Kakak lagi belanja</b></p>
+		<video width="120" height="240" autoplay muted>
+			<source src="video/1.mp4" type="video/mp4">
+			<source src="movie.ogg" type="video/ogg">
+		</video>
+		<p><b>Adek Joget</b></p>
+		<video width="120" height="240" autoplay muted>
+		  <source src="video/2.mp4" type="video/mp4">
+		  <source src="movie.ogg" type="video/ogg">
+		</video>
+		</video>
+		<p><b>AYAH</b></p>
+		<video width="120" height="240" autoplay muted>
+		  <source src="video/3.mp4" type="video/mp4">
+		  <source src="movie.ogg" type="video/ogg">
+		</video>
+	</div>
+</section>
+
+
+
+
+
+
+<!--FOOTER-->
+<footer>
+	<div class="container">
+		<small>Copyright 2021. All rights reserved</small>
+	</div>
+</footer>
+
+
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".bg-loader").hide();
+	})
+
+	const toTop = document.querySelector(".to-top");
+    window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+      toTop.classList.add("active");
+    } 
+    else {
+      toTop.classList.remove("active");
+    }
+    })
+
+
+	const materialbox = document.querySelectorAll('.materialboxed');
+  	M.Materialbox.init(materialbox);
+
+    const LABEL = document.querySelectorAll('.carousel');
+    M.Carousel.init(LABEL);
+
+ 
+</script>
+
+<!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
